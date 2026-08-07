@@ -16,6 +16,7 @@ public class ScanLine {
         String college = sc.nextLine();
         System.out.println("College is: " + college);
         sc.close();
+
     }
 
 }
