@@ -17,9 +17,7 @@ class Student {
 public class ClObj {
     public static void main(String[] args) {
         Student s1 = new Student();
-        s1.roll = 1;
-        s1.name = "Tulasi";
-        s1.height = 5.7;
+
         System.out.println(s1.roll);
         System.out.println(s1.name);
         System.out.println(s1.height);
