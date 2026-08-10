@@ -1,0 +1,30 @@
+package Week01.Week02;
+
+class Student {
+    int roll;
+    String name;
+    double height;
+
+    void run() {
+        System.out.println("Student is running");
+    }
+
+    void sleep() {
+        System.out.println("Student is sleeping");
+    }
+}
+
+public class ClObj {
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        s1.roll = 1;
+        s1.name = "Tulasi";
+        s1.height = 5.7;
+        System.out.println(s1.roll);
+        System.out.println(s1.name);
+        System.out.println(s1.height);
+        s1.run();
+        s1.sleep();
+    }
+
+}
