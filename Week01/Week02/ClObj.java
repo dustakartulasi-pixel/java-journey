@@ -1,20 +1,21 @@
 package Week01.Week02;
 
-class Student {
-    int roll;
-    String name;
-    double height;
-
-    void run() {
-        System.out.println("Student is running");
-    }
-
-    void sleep() {
-        System.out.println("Student is sleeping");
-    }
-}
-
 public class ClObj {
+
+    static class Student {
+        int roll;
+        String name;
+        double height;
+
+        void run() {
+            System.out.println("Student is running");
+        }
+
+        void sleep() {
+            System.out.println("Student is sleeping");
+        }
+    }
+
     public static void main(String[] args) {
         Student s1 = new Student();
 
