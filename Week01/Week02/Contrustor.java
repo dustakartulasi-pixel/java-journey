@@ -15,6 +15,9 @@ class Student {
 public class Contrustor {
     public static void main(String[] args) {
         Student obj = new Student();
+        obj.name = "Tulas";
+        obj.age = 21;
+        obj.height = 5.9;
         obj.display();
 
     }
