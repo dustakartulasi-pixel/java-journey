@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech2AI Focus Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-decor">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="badge">⚡ Tech2AI</div>
+            <h1>Focus Timer</h1>
+            <p id="message" class="message">Stay disciplined, achieve excellence.</p>
+        </header>
+
+        <div class="mode-selector">
+            <button class="mode-btn active" data-time="25" data-mode="focus">Focus (25m)</button>
+            <button class="mode-btn" data-time="5" data-mode="short">Short Break (5m)</button>
+            <button class="mode-btn" data-time="15" data-mode="long">Long Break (15m)</button>
+        </div>
+
+        <div class="timer-container">
+            <svg class="progress-ring" width="260" height="260">
+                <circle class="progress-ring-bg" stroke="rgba(255, 255, 255, 0.1)" stroke-width="8" fill="transparent" r="120" cx="130" cy="130"/>
+                <circle id="progressRing" class="progress-ring-circle" stroke="url(#gradient)" stroke-width="8" stroke-dasharray="753.98" stroke-dashoffset="0" stroke-linecap="round" fill="transparent" r="120" cx="130" cy="130"/>
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#6366f1" />
+                        <stop offset="100%" stop-color="#a855f7" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            <div class="timer-display">
+                <span id="timer" class="timer">25:00</span>
+                <span id="sessionStatus" class="session-label">FOCUS SESSION</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="startBtn" class="btn btn-primary">
+                <span class="btn-icon">▶</span> Start
+            </button>
+            <button id="pauseBtn" class="btn btn-secondary" disabled>
+                <span class="btn-icon">⏸</span> Pause
+            </button>
+            <button id="resetBtn" class="btn btn-tertiary">
+                <span class="btn-icon">↺</span> Reset
+            </button>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat-item">
+                <span class="stat-value" id="completedSessions">0</span>
+                <span class="stat-label">Completed Sessions</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
