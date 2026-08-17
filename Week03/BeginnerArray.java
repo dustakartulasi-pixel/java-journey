@@ -12,7 +12,7 @@ public class BeginnerArray {
         }
 
         // for (int i = 0; i <= marks.length - 1; i++) {
-        for (int i = marks.length - 1; i >= 0; i--) {
+        for (int i = marks.length - 1; i >= 0; i--) { // reverse order
             System.out.println(marks[i]);
         }
         sc.close();
