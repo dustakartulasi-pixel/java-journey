@@ -6,7 +6,7 @@ public class TraceArrayChange {
         int[] original = { 14, 18, 22, 26 };
         int updateIndex = 1;
         int updatedValue = 25;
-        int requestedIndex = 4;
+        int requestedIndex = 2;
 
         // Create an independent snapshot
         int[] snapshot = new int[original.length];
