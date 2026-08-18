@@ -17,7 +17,7 @@ import java.util.Scanner;
         sc.close();
     }
 }*/
-public class Analyse {
+/*public class Analyse {
     public static void main(String[] args) {
         int[] marks = { 70, 80, 60, 90, 50 };
         int tot = 0;
@@ -28,8 +28,21 @@ public class Analyse {
         System.out.println("Total: " + tot);
         avg = tot / 5;
         System.out.println("Average: " + avg);
-        // Write your code here.
-
+        // Write your code here
     }
 
+}*/
+public class Analyse {
+    public static void main(String[] args) {
+        int[] stock = { 4, 12, 2, 9, 5 };
+        int reorderLevel = 5;
+        int count = 0;
+        for (int i = 0; i <= stock.length - 1; i++) {
+            if (stock[i] <= reorderLevel) {
+                count++;
+            }
+        }
+
+        System.out.println("Items to reorder: " + count);
+    }
 }
