@@ -2,7 +2,7 @@ package Week03;
 
 import java.util.Scanner;
 
-public class Analyse {
+/*public class Analyse {
     public static void main(String[] args) {
         int sum = 0;
         Scanner sc = new Scanner(System.in);
@@ -16,4 +16,20 @@ public class Analyse {
         System.out.println("Total: " + sum);
         sc.close();
     }
+}*/
+public class Analyse {
+    public static void main(String[] args) {
+        int[] marks = { 70, 80, 60, 90, 50 };
+        int tot = 0;
+        double avg;
+        for (int i = 0; i <= marks.length - 1; i++) {
+            tot += marks[i];
+        }
+        System.out.println("Total: " + tot);
+        avg = tot / 5;
+        System.out.println("Average: " + avg);
+        // Write your code here.
+
+    }
+
 }
