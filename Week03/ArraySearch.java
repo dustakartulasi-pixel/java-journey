@@ -20,7 +20,7 @@ public class ArraySearch {
     public static void main(String[] args) {
         int[] arr = { 16, 29, 11, 18, 4 };
         SearchArray s = new SearchArray();
-        s.search(arr, 29);
+        s.search(arr, 9);
 
     }
 
