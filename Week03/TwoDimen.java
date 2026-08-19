@@ -1,20 +1,26 @@
 package Week03;
 
+import java.util.Scanner;
+
 public class TwoDimen {
     public static void main(String[] args) {
-        int[][] arr = new int[3][3];
-        int count = 1;
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                arr[i][j] = count;
-                count++;
+
+        Scanner sc = new Scanner(System.in);
+        int sizeR = sc.nextInt();
+        int sizeC = sc.nextInt();
+        int a[][] = new int[sizeR][sizeC];
+        for (int i = 0; i < sizeR; i++) {
+            for (int j = 0; j < sizeC; j++) {
+                a[i][j] = sc.nextInt();
+
             }
         }
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.print(arr[i][j] + " ");
+        for (int i = 0; i < sizeR; i++) {
+            for (int j = 0; j < sizeC; j++) {
+                System.out.print(a[i][j] + " ");
             }
             System.out.println();
+
         }
 
     }
