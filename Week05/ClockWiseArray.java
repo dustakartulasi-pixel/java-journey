@@ -8,7 +8,7 @@ public class ClockWiseArray {
 
         b[0] = last;
 
-        for (int i = 0; i < a.length - 1; i++) {
+        for (int i = a.length - 2; i >= 0; i--) {
             b[i + 1] = a[i];
         }
 
