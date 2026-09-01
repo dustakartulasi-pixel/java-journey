@@ -11,7 +11,7 @@ public class AntiClockArray {
         b[a.length - 1] = first;
 
         for (int i = 0; i < a.length; i++) {
-            System.out.println(b[i]);
+            System.out.print(+b[i] + " ");
         }
     }
 
