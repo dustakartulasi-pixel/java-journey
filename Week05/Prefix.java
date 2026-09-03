@@ -12,10 +12,9 @@ public class Prefix {
             sum += arr[i];
             prefixSum[i] = sum;
         }
-        System.out.println("Prefix Sum Array is: " + Arrays.toString(prefixSum));
-        // for (int i = 0; i < prefixSum.length; i++) {
-        // System.out.print(prefixSum[i] + " ");
-        // }
+        for (int i = 0; i < prefixSum.length; i++) {
+            System.out.print(prefixSum[i] + " ");
+        }
 
     }
 
