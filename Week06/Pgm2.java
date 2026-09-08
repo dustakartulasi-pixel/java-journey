@@ -9,7 +9,7 @@ public class Pgm2 {
         } else {
             System.out.println("Both refer to different object");
         }
-        if (s1.equals(s2)) {
+        if (s1.equalsIgnoreCase(s2)) {
             System.out.println("Equal");
         } else {
             System.out.println("Not Equal");
