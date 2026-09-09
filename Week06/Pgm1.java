@@ -9,6 +9,10 @@ class pgm1 {
         } else {
             System.out.println("Not Equal");
         }
+        char[] arr = s1.toCharArray();
+        for (char c : arr) {
+            System.out.println(c);
+        }
 
     }
 }
