@@ -16,8 +16,8 @@ public class Pgm2 {
         String res = t1.concat(t2);
         System.out.println(res);
         String s4 = "Hyderabad";
-        String s5 = "Hyderabad";
+        String s5 = "hyderabad";
         System.out.println(s4.compareTo(s5));
-
+        System.out.println(s4.compareToIgnoreCase(s5));
     }
 }
