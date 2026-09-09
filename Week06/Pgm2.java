@@ -11,5 +11,10 @@ public class Pgm2 {
         }
         String s3 = s1 + s2;
         System.out.println(s3);
+        String t1 = new String("devika");
+        String t2 = new String("ram");
+        String res = t1.concat(t2);
+        System.out.println(res);
+
     }
 }
