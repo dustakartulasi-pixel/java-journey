@@ -15,6 +15,9 @@ public class Pgm2 {
         String t2 = new String("ram");
         String res = t1.concat(t2);
         System.out.println(res);
+        String s4 = "Hyderabad";
+        String s5 = "Hyderabad";
+        System.out.println(s4.compareTo(s5));
 
     }
 }
