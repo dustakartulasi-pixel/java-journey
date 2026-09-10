@@ -14,8 +14,8 @@ public class StringBu {
         System.out.println(s1.length());
         System.out.println(s1.capacity());
         System.out.println(s1.length());
-        s1.append(" is a programming language");
-        System.out.print(s1);
+        s1.append("Java is a programming language");
+        System.out.println(s1);
         System.out.println(s1.capacity());
         System.out.println(s1.length());
 
