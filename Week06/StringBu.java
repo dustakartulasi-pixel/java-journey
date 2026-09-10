@@ -18,6 +18,9 @@ public class StringBu {
         System.out.println(s1);
         System.out.println(s1.capacity());
         System.out.println(s1.length());
+        System.out.println(s1.charAt(0));
+        s1.delete(0, 4);
+        System.out.println(s1);
 
     }
 }
