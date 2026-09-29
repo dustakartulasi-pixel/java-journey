@@ -33,11 +33,9 @@ public class Bank {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the opening balance");
         double balance = sc.nextDouble();
-        System.out.println("Enter the amount to deposit");
-        double amount = sc.nextDouble();
         BankAccount b = new BankAccount(balance);
-        System.out.println("Initial Balance: " + b.getBalance());
-        b.deposit(amount);
+        System.out.println("Initial Balance:" + b.getBalance());
+        b.deposit(10000);
         System.out.println("Balance after deposit: " + b.getBalance());
         sc.close();
     }
