@@ -1,4 +1,4 @@
-package Week01.Week02;
+package Week02;
 
 class School {
     void student(short a, short b) {
