@@ -7,7 +7,7 @@ public class VowelInText {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a text: ");
         String text = scanner.nextLine();
-        scanner.close();
+
         int vowelCount = 0;
         text = text.toLowerCase();
         // Traverse the text and update vowelCount.
