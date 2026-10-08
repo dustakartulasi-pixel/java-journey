@@ -14,7 +14,7 @@ class Dog extends Animal {
 
 public class UpCasting {
     public static void main(String[] args) {
-        Dog ref = new Dog();
+        Animal ref = new Dog();
         ref.eat();
         ref.eat();
     }
