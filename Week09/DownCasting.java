@@ -6,7 +6,7 @@ class Parent {
     }
 
     void display2() {
-        System.out.println("Inside child display2");
+        System.out.println("Inside Parent display2");
     }
 }
 
