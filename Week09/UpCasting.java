@@ -7,7 +7,7 @@ class Animal {
 }
 
 class Dog extends Animal {
-    void bark() {
+    void eat() {
         System.out.println("barking");
     }
 }
@@ -16,6 +16,6 @@ public class UpCasting {
     public static void main(String[] args) {
         Dog ref = new Dog();
         ref.eat();
-        ref.bark();
+        ref.eat();
     }
 }
