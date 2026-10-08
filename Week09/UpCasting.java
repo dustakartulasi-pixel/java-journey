@@ -8,7 +8,7 @@ class Animal {
 
 class Dog extends Animal {
     void eat() {
-        System.out.println("barking");
+        System.out.println("eating");
     }
 }
 
