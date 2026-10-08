@@ -1,0 +1,32 @@
+package Week09;
+
+class Parent {
+    void display1() {
+        System.out.println("Inside Parent display1");
+    }
+
+    void display2() {
+        System.out.println("Inside child display2");
+    }
+}
+
+class child1 extends Parent {
+    @Override
+    void display2() {
+        System.out.println("Inside child1 display2");
+    }
+
+    void display3() {
+        System.out.println("Inside child1 display3");
+    }
+}
+
+public class DownCasting {
+    public static void main(String[] args) {
+        Parent ref = new child1();
+        ref.display1();
+        ref.display2();
+        child1 ref1 = (child1) ref;
+        ref1.display3();
+    }
+}
