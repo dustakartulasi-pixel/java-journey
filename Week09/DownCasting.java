@@ -42,7 +42,7 @@ class child2 extends Parent {
 
 public class DownCasting {
     public static void main(String[] args) {
-        Parent ref = new child1();
+        Parent ref = new child2();
         ref.display1();
         ref.display2();
         child1 ref1 = (child1) ref;
