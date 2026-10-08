@@ -12,6 +12,10 @@ class Parent {
 
 class child1 extends Parent {
     @Override
+    void display1() {
+        System.out.println("Inside child1 display1");
+    }
+
     void display2() {
         System.out.println("Inside child1 display2");
     }
