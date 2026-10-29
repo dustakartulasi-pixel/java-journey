@@ -145,7 +145,9 @@ abstract class Member {
 
     // Abstract methods to be implemented by subclasses
     public abstract int getBorrowingLimit();
+
     public abstract double calculateFine(int daysLate);
+
     public abstract String getMemberType();
 
     public void displayMember() {
@@ -265,7 +267,7 @@ class Library {
         boolean found = false;
         for (int i = 0; i < bookCount; i++) {
             if (books[i].getTitle().toLowerCase().contains(searchText.toLowerCase()) ||
-                books[i].getAuthor().toLowerCase().contains(searchText.toLowerCase())) {
+                    books[i].getAuthor().toLowerCase().contains(searchText.toLowerCase())) {
                 books[i].displayBook();
                 found = true;
             }
@@ -311,7 +313,8 @@ class Library {
 
         // Check borrowing limit
         if (member.getCurrentBorrowedCount() >= member.getBorrowingLimit()) {
-            System.out.println("Error: Member has reached borrowing limit of " + member.getBorrowingLimit() + " books!");
+            System.out
+                    .println("Error: Member has reached borrowing limit of " + member.getBorrowingLimit() + " books!");
             return;
         }
 
@@ -321,7 +324,8 @@ class Library {
         System.out.println("Success: Book '" + book.getTitle() + "' issued to " + member.getName() + "!");
     }
 
-    // 6. Return Book: Validate current borrower, calculate fines, update availability
+    // 6. Return Book: Validate current borrower, calculate fines, update
+    // availability
     public void returnBook(int bookId, int memberId, int daysLate) {
         // Find Book
         Book book = null;
@@ -413,7 +417,8 @@ class Library {
         }
     }
 
-    // 9. Library Report: Summarize statistics and identify the most frequently issued book
+    // 9. Library Report: Summarize statistics and identify the most frequently
+    // issued book
     public void libraryReport() {
         System.out.println("--- Library Report ---");
         System.out.println("Total Registered Books: " + bookCount);
@@ -472,7 +477,6 @@ public class Main {
             System.out.println("10. Display All Members");
             System.out.println("0. Exit");
             System.out.print("Enter choice: ");
-
             int choice = sc.nextInt();
             sc.nextLine(); // clear input line
 
