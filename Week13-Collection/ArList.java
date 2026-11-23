@@ -16,5 +16,10 @@ public class ArList {
         System.out.println(nums.remove(1));
         System.out.println(nums);
         System.out.println(nums.indexOf(30));
+        nums.add(20);
+        nums.add(20);
+        System.out.println(nums);
+        System.out.println(nums.lastIndexOf(20));
+        System.out.println(nums.indexOf(20));
     }
 }
