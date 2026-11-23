@@ -15,5 +15,6 @@ public class ArList {
         System.out.println(nums.isEmpty());
         System.out.println(nums.remove(1));
         System.out.println(nums);
+        System.out.println(nums.indexOf(30));
     }
 }
