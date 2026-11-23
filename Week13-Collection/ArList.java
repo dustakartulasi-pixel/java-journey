@@ -12,5 +12,8 @@ public class ArList {
         System.out.println(nums.get(1));
         nums.add(1, 20);
         System.out.println(nums);
+        System.out.println(nums.isEmpty());
+        System.out.println(nums.remove(1));
+        System.out.println(nums);
     }
 }
