@@ -10,6 +10,7 @@ public class ArList {
         nums.add(30);
         System.out.println(nums);
         System.out.println(nums.get(1));
-
+        nums.add(1, 20);
+        System.out.println(nums);
     }
 }
