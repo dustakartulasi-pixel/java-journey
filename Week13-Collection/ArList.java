@@ -9,6 +9,7 @@ public class ArList {
         nums.add(20);
         nums.add(30);
         System.out.println(nums);
+        System.out.println(nums.get(1));
 
     }
 }
